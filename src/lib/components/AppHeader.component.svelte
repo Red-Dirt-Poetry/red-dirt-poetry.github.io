@@ -2,7 +2,6 @@
   <a href="/">Home</a>
   <a href="/about">About</a>
   <a href="/events">Events</a>
-  <a href="/community">Community</a>
   <a href="/press">Press</a>
   <a href="/contact">Contact</a>
 </header>

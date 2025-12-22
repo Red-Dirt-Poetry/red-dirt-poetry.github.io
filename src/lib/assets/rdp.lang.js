@@ -20,27 +20,32 @@ export const siteLang = {
         links: [
              {
                 link: 'https://www.405magazine.com/writing-groups-authors-en-masse/',
+                slug: 'OKC-area writing groups for lexical support.',
                 source: '405 Magazine',
                 date: '08/29/2025'
             },
             {
                 link: 'https://www.okgazette.com/arts-culture/poetic-devices-12971304/', 
+                slug: 'Red Dirt Poetry’s first anthology can be found in all the cool local bookstores.',
                 source: 'Oklahoma Gazette', 
                 date: '03/12/2025'
             },
             {
                 link: 'https://www.kosu.org/arts-culture/2025-01-29/4-new-books-by-oklahoma-authors-to-check-out-this-january',
+                slug: '4 new books by Oklahoma authors to check out this January',
                 source: 'KOSU',
                 date: '01/29/2025'
             },
              {
 
                 link: 'https://podcast.metrolibrary.org/oklahoma-poetry-0',
+                slug: 'Poetry in Oklahoma City (featuring Red Dirt Poetry)',
                 source: 'Metropolitan Library',
                 date: '04/15/2024'
             },
             {
                 link: 'https://www.okgazette.com/arts-culture/red-dirt-poetry-offers-a-platform-to-seasoned-and-aspiring-poets-alike-2963502/',
+                slug: 'Red Dirt Poetry offers a platform to seasoned and aspiring poets alike.',
                 source: 'Oklahoma Gazette',
                 date: '11/19/2014'
             }

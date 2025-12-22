@@ -1,24 +1,26 @@
 <script>
+  import { siteLang } from "$lib/assets/rdp.lang";
   let posts, description, excerpt, time, url, title;
 </script>
 
-<header class="press-head">
-  <h1>Press</h1>
-  {description}
-</header>
-<section class="press-main postfeed">
-  {#each posts as post}
-    <div class="press-table-row">
-      <a class="card-link" href={{ url }}>
-        <h2 class="card-title">{title}</h2>
-      </a>
+<div id="press-page-wrapper">
+  <header class="press-head">
+    <h1>Press</h1>
+    {description}
+  </header>
+  <section class="press-main postfeed">
+    {#each siteLang.press.links as post}
+      <div class="press-table-row">
+        <a class="card-link" href={post.link}>
+          <h2 class="card-title">{post.source}</h2>
+        </a>
+        <p class="article-slug">{post.slug}</p>
 
-      <p>{excerpt}</p>
-
-      <p class="time">{time}</p>
-    </div>
-  {/each}
-</section>
+        <p class="time">{post.date}</p>
+      </div>
+    {/each}
+  </section>
+</div>
 
 <style>
   #press-page-wrapper {
@@ -41,12 +43,6 @@
           margin: 0;
           font-size: var(--h4);
           flex-basis: 45%;
-        }
-
-        p {
-          font-size: var(--h5);
-          flex-basis: 30%;
-          overflow: hidden;
         }
 
         time {

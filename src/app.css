@@ -278,35 +278,7 @@ small,
         }
       }
 
-      section#instagram {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
 
-        h2 {
-          flex-basis: 100%;
-        }
-
-        .ig-post {
-          position: relative;
-          flex-grow: 1;
-          min-height: 30vh;
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          &:hover {
-            flex-grow: 1.5;
-            transition: flex-grow 0.5s;
-            cursor: pointer;
-            border: red 2px;
-          }
-        }
-
-        .ig-post:not(:last-child) {
-          margin-right: 1rem;
-        }
-      }
       section#events {
         ul.event-placeholder {
           list-style: none;
@@ -315,17 +287,11 @@ small,
           flex-flow: row nowrap;
           justify-content: space-between;
           & > li {
-            border: solid black 1px;
+            
             font-size: var(--h6);
-            height: 400px;
             flex-basis: 20%;
-            background-color: pink;
+    
             padding: 1rem;
-
-            p {
-              padding: 3rem 0;
-              text-align: center;
-            }
           }
         }
       }

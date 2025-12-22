@@ -1,12 +1,15 @@
 <script>
   let { data } = $props();
   import logo from "$lib/assets/RedDirtLogo.png";
-  console.log(data.posts.posts);
+  import OpenMicPng from "$lib/assets/OpenMic.png";
+  import EditsPng from "$lib/assets/Edits.png";
+  import WritesPng from "$lib/assets/Writes.png";
+  import ReadsPng from "$lib/assets/Reads.png";
 </script>
 
 <div id="home-page-wrapper">
   <section class="logo">
-    <img alt="Red Dirt Poetry logo" src={logo} />
+    <enhanced:img alt="Red Dirt Poetry logo" src={logo} />
   </section>
 
   <section id="about">
@@ -24,29 +27,26 @@
     <h2>Hang Out With Poets</h2>
     <ul class="event-placeholder">
       <li id="open-mic">
-        Open Mic
-        <p>Every Wednesday @ Literati Press at 7pm!</p>
+        <enhanced:img src={OpenMicPng}></enhanced:img>
       </li>
       <li id="edits">
-        Edits
-        <p>Every first Saturday of the month @ Second Story Books at 1pm!</p>
+        <enhanced:img src={EditsPng}></enhanced:img>
       </li>
+
       <li id="writes">
-        Writes
-        <p>Every third Tuesday of the month @ Literati Press at 7pm!</p>
+        <enhanced:img src={WritesPng}></enhanced:img>
       </li>
       <li id="reads">
-        Reads
-        <p>Every 4th Saturday of the month @ The Floating Bookshop at 1pm!</p>
+        <enhanced:img src={ReadsPng}></enhanced:img>
       </li>
     </ul>
   </section>
   <section id="instagram">
     <h2>Latest Grams</h2>
     {#each data.posts.posts as post}
-      <div class="ig-post" style={`background-image: url(${post.mediaUrl})`}>
-        <a alt="go to instagram post" href={post.permalink} target="_blank"></a>
-      </div>
+      <a class="ig-post" href={post.permalink} target="_blank">
+        <enhanced:img alt={post.caption} src={post.mediaUrl} />
+      </a>
     {/each}
   </section>
 </div>
@@ -66,6 +66,9 @@
     }
   }
 
+  #open-mic {
+  }
+
   section#instagram {
     display: flex;
     flex-wrap: wrap;
@@ -77,12 +80,9 @@
     }
 
     .ig-post {
+      width: 30%;
       position: relative;
       flex-grow: 1;
-      min-height: 30vh;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
 
       &:hover {
         flex-grow: 1.5;
