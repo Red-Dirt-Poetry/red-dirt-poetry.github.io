@@ -267,16 +267,7 @@ small,
       section img {
         padding-bottom: 4rem;
       }
-      section#slideshow {
-        border: none;
-        .glide__arrow {
-          background-color: #ffffff;
-          opacity: 0.4;
-          color: black;
-          font-weight: 800;
-          top: 90%;
-        }
-      }
+     
 
 
       section#events {
@@ -295,27 +286,8 @@ small,
           }
         }
       }
-      @media (max-width: 750px) {
-        section#events,
-        section#instagram {
-          display: block;
-
-          [class*="ig-"] {
-            display: block;
-            margin: 1rem 0;
-          }
-        }
-      }
+     
     }
   }
 
-@layer contact-us {
-    #contact-page-wrapper .content {
-        min-height: 50vh;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: center;
-        font-size: var(--h4);
-    }
-}
+

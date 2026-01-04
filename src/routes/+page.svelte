@@ -25,7 +25,7 @@
   </section>
   <section id="events">
     <h2>Hang Out With Poets</h2>
-    <ul class="event-placeholder">
+    <ul class="events-banners">
       <li id="open-mic">
         <enhanced:img src={OpenMicPng}></enhanced:img>
       </li>
@@ -66,10 +66,8 @@
     }
   }
 
-  #open-mic {
-  }
-
-  section#instagram {
+  section#instagram,
+  .events-banners {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -77,6 +75,10 @@
 
     h2 {
       flex-basis: 100%;
+    }
+
+    li {
+      width: 20%;
     }
 
     .ig-post {
@@ -94,6 +96,25 @@
 
     .ig-post:not(:last-child) {
       margin-right: 1rem;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .events-banners,
+    section#instagram {
+      display: block;
+
+      [class*="ig-"] {
+        display: block;
+        margin: 1rem 0;
+      }
+
+      li {
+        width: 100%;
+        img {
+          margin: 0 auto;
+        }
+      }
     }
   }
 </style>
