@@ -1,5 +1,9 @@
 <script>
   import { siteLang } from "$lib/assets/rdp.lang";
+  import EditsLogo from "$lib/assets/EditsLogo.png";
+  import NytPickle from "$lib/assets/nyt_openMic_pickle.jpg";
+  import WritesLogo from "$lib/assets/WritesLogo.png";
+  import ReadsSchedule from "$lib/assets/ReadsSched_2025B.png";
 </script>
 
 <header class="events-page-header">
@@ -14,7 +18,7 @@
   </div>
 
   <div class="regular-event-description" id="open-mic">
-    <img class="event-img" />
+    <enhanced:img class="event-img" src={NytPickle} />
     <div class="description-card-text">
       <h3>Open Mic</h3>
       <p>
@@ -22,19 +26,18 @@
       </p>
     </div>
   </div>
-
-  <div class="regular-event-description" id="edits">
-    <img class="event-img" />
+  <div class="regular-event-description" id="reads">
+    <enhanced:img class="event-img" src={ReadsSchedule} />
     <div class="description-card-text">
-      <h3>Edits</h3>
+      <h3>Reads</h3>
       <p>
-        {siteLang.events.edits}
+        {siteLang.events.reads}
       </p>
     </div>
   </div>
 
   <div class="regular-event-description" id="writes">
-    <img class="event-img" />
+    <enhanced:img class="event-img" src={WritesLogo} />
     <div class="description-card-text">
       <h3>Writes</h3>
       <p>
@@ -43,12 +46,12 @@
     </div>
   </div>
 
-  <div class="regular-event-description" id="reads">
-    <img class="event-img" />
+  <div class="regular-event-description" id="edits">
+    <enhanced:img class="event-img" src={EditsLogo} />
     <div class="description-card-text">
-      <h3>Reads</h3>
+      <h3>Edits</h3>
       <p>
-        {siteLang.events.reads}
+        {siteLang.events.edits}
       </p>
     </div>
   </div>
@@ -141,10 +144,13 @@
     }
 
     img.event-img {
-      background-color: lavender;
-      border: solid;
-      height: 200px !important;
       width: 500px;
+      height: 100%;
+    }
+    img.event-img:first-child {
+      max-height: 500px;
+      object-fit: cover;
+      object-position: 50% top;
     }
   }
 
@@ -202,23 +208,6 @@
       }
     }
 
-    section.post-feed {
-      display: block;
-      max-height: unset;
-
-      article.card {
-        border: solid 1px black;
-        padding: 4rem;
-        margin-bottom: 4rem;
-
-        .card-content {
-          h3 {
-            font-size: var(--h4) !important;
-            margin: 0;
-          }
-        }
-      }
-    }
     section.events-main {
       display: block;
     }
@@ -233,7 +222,6 @@
       }
 
       .event-img {
-        height: 100px !important;
         width: 500px;
       }
     }

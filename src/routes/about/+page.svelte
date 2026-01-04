@@ -13,7 +13,7 @@
   </header>
 
   <div class="main-content"></div>
-  <section id="board">
+  <!--section id="board">
     <h2>Meet the Board</h2>
     <div class="boardie"></div>
     <div class="boardie"></div>
@@ -22,7 +22,7 @@
     <div class="boardie"></div>
     <div class="boardie"></div>
     <div class="boardie"></div>
-  </section>
+  </section -->
 </div>
 
 <style lang="css">

@@ -11,7 +11,7 @@
   <section class="press-main postfeed">
     {#each siteLang.press.links as post}
       <div class="press-table-row">
-        <a class="card-link" href={post.link}>
+        <a class="card-link" href={post.link} target="_blank">
           <h2 class="card-title">{post.source}</h2>
         </a>
         <p class="article-slug">{post.slug}</p>
