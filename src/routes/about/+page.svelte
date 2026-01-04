@@ -12,7 +12,6 @@
     </div>
   </header>
 
-  <div class="main-content"></div>
   <!--section id="board">
     <h2>Meet the Board</h2>
     <div class="boardie"></div>
