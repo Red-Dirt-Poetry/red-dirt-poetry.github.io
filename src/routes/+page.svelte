@@ -104,9 +104,10 @@
     section#instagram {
       display: block;
 
-      [class*="ig-"] {
+      .ig-post {
         display: block;
         margin: 1rem 0;
+        width: 100%;
       }
 
       li {
