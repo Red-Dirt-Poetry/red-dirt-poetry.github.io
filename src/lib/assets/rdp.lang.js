@@ -8,7 +8,7 @@ export const siteLang = {
 
         openMic: 'Red Dirt Poetry hosts a weekly open mic every Wednesday at Literari Press in the Paseo. Poets can sign up for a five-minute slot beginning at 6:30 p.m. The show starts at 7:00 p.m. Poets of any age and skill level are welcome. While the primary focus is poetry, we welcome musicians and other performers as well.',
 
-        edits: 'Red Dirt Edits takes place on the first Saturday of every month at 1:00 p.m. at Second Story Books. Bring 6 copies of a poem you would like feedback on, and M. Kat will help guide us through the peer review/revision process. If you don’t have access to a printer, DM @shmemkat on Instagram; we’ve got you covered.',
+        edits: 'Red Dirt Edits takes place on the first Saturday of every month at 1:00 p.m. at Second Story Books. Bring 6 copies of a poem you would like feedback on, and get guidance through the peer review/revision process.',
 
         writes: 'Red Dirt Writes takes place on the third Tuesday of every month at 7:00 p.m. at Literati Press. The workshop leader changes every month as does the topic. Bring a notebook and your favorite writing utensil. You will leave the workshop with a draft of a new poem.',
 
